@@ -1,4 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:100,400);
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600&display=swap');
+
 @-webkit-keyframes load {
   0% {
     stroke-dashoffset: 0;
@@ -19,6 +21,7 @@
 
 body {
   box-sizing: border-box;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 header {
@@ -42,7 +45,7 @@ nav a {
 }
 
 section {
-  height: 100vh;
+  height: 90vh;
 }
 
 svg {
