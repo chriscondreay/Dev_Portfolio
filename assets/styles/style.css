@@ -1,116 +1,65 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:100,400);
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
 
-@-webkit-keyframes load {
-  0% {
-    stroke-dashoffset: 0;
-  }
-}
-@keyframes load {
-  0% {
-    stroke-dashoffset: 0;
-  }
-}
-
-*,
-::before,
-::after {
-  padding: 0;
-  margin: 0;
-}
-
-body {
+* {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-header {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-nav ul {
-  display: flex;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-nav a {
-  display: inline-block;
-  padding: .5em;
-  justify-content: space-around;
+li, 
+a {
+  font-size: 16px;
   text-decoration: none;
   color: black;
 }
 
-section {
-  height: 90vh;
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px 5%;
 }
 
-svg {
-  margin: 0 30px;
+.name {
+  margin-right: auto;
 }
 
-g {
-  transform: translate(100px,100px);
-  -webkit-transform: translate(100px,100px);
-  -moz-transform: translate(100px,100px);
-  -ms-transform: translate(100px,100px);
-  -o-transform: translate(100px,100px);
+.nav-links {
+  list-style: none;
 }
 
-.progress {
-  position: relative;
+.nav-links li {
+  font-weight: 700;
   display: inline-block;
-  padding: 0;
-  text-align: center;
-}
-.progress > li {
-  display: inline-block;
-  position: relative;
-  text-align: center;
-  color: #93a2ac;
-  font-family: Lato;
-  font-weight: 100;
-  margin: 2rem;
-}
-.progress > li:before {
-  content: attr(data-name);
-  position: absolute;
-  width: 100%;
-  bottom: -2rem;
-  font-weight: 400;
-}
-.progress > li:after {
-  content: attr(data-percent);
-  position: absolute;
-  width: 100%;
-  top: 3.7rem;
-  left: 0;
-  font-size: 2rem;
-  text-align: center;
-}
-.progress svg {
-  width: 10rem;
-  height: 10rem;
-}
-.progress svg:nth-child(2) {
-  position: absolute;
-  left: 0;
-  top: 0;
-  transform: rotate(-90deg);
-}
-.progress svg:nth-child(2) path {
-  fill: none;
-  stroke-width: 25;
-  stroke-dasharray: 629;
-  stroke: #fff;
-  opacity: 0.9;
-  -webkit-animation: load 10s;
-          animation: load 10s;
+  padding: 0 20px;
 }
 
-.skill-list {
-  text-align: center;
+.nav-links li a {
+  transition: all 0.3s ease-in-out 0s;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  -ms-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+}
+
+.nav-links li a:hover {
+  color: #4cba57;
+}
+
+.links a {
+  font-size: 25px;
+  transition: all .2s ease-in-out 0s;
+  color: black;
+  -webkit-transition: all .2s ease-in-out 0s;
+  -moz-transition: all .2s ease-in-out 0s;
+  -ms-transition: all .2s ease-in-out 0s;
+  -o-transition: all .2s ease-in-out 0s;
+}
+
+#github:hover {
+  color: #6E5494;
+}
+#linkedin:hover {
+  color: #0072b1;
 }
