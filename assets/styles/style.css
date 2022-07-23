@@ -1,113 +1,24 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:100,400);
-@-webkit-keyframes load {
-  0% {
-    stroke-dashoffset: 0;
-  }
-}
-@keyframes load {
-  0% {
-    stroke-dashoffset: 0;
-  }
-}
-
-*,
-::before,
-::after {
-  padding: 0;
-  margin: 0;
-}
-
-body {
+* {
   box-sizing: border-box;
+  /* padding: 0;
+  margin: 0; */
+}
+
+.about {
+  height: 100vh;
 }
 
 header {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
 }
 
-nav ul {
-  display: flex;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-nav a {
-  display: inline-block;
-  padding: .5em;
-  justify-content: space-around;
+a {
   text-decoration: none;
-  color: black;
 }
 
-section {
-  height: 100vh;
-}
-
-svg {
-  margin: 0 30px;
-}
-
-g {
-  transform: translate(100px,100px);
-  -webkit-transform: translate(100px,100px);
-  -moz-transform: translate(100px,100px);
-  -ms-transform: translate(100px,100px);
-  -o-transform: translate(100px,100px);
-}
-
-.progress {
-  position: relative;
+li {
+  list-style: none;
   display: inline-block;
-  padding: 0;
-  text-align: center;
-}
-.progress > li {
-  display: inline-block;
-  position: relative;
-  text-align: center;
-  color: #93a2ac;
-  font-family: Lato;
-  font-weight: 100;
-  margin: 2rem;
-}
-.progress > li:before {
-  content: attr(data-name);
-  position: absolute;
-  width: 100%;
-  bottom: -2rem;
-  font-weight: 400;
-}
-.progress > li:after {
-  content: attr(data-percent);
-  position: absolute;
-  width: 100%;
-  top: 3.7rem;
-  left: 0;
-  font-size: 2rem;
-  text-align: center;
-}
-.progress svg {
-  width: 10rem;
-  height: 10rem;
-}
-.progress svg:nth-child(2) {
-  position: absolute;
-  left: 0;
-  top: 0;
-  transform: rotate(-90deg);
-}
-.progress svg:nth-child(2) path {
-  fill: none;
-  stroke-width: 25;
-  stroke-dasharray: 629;
-  stroke: #fff;
-  opacity: 0.9;
-  -webkit-animation: load 10s;
-          animation: load 10s;
-}
-
-.skill-list {
-  text-align: center;
 }
