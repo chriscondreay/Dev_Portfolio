@@ -13,3 +13,16 @@
 //     alert('Success!');
 //   })
 // }
+
+function sendMail() {
+  Email.send({
+    SecureToken: "b9c509a9-537f-4658-92f5-f8d210b6c93b",
+    To : 'condreaychris@gmail.com',
+    From : document.querySelector('#email').value,
+    Subject : "New Contact Form Inquery",
+    Body : "And this is the body"
+    }).then(
+      message => alert(message)
+    );
+}
+

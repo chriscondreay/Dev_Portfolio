@@ -109,20 +109,21 @@
   <section class="contact" id="contact">
     <div class="container">
       <h3>Get In Touch</h3>
-      <form class="form contact-form" action="contact.php" method="POST">
+      <form class="form contact-form" onsubmit="sendMail(); reset(); return false">
         <input type="text" id="name" name="name" placeholder="Name" required>
         <input type="email" id="email" name="email" placeholder="Email" required>
         <input type="text" id="phone" name="phone"  placeholder="Phone Number" required>
         <textarea id="message" rows="4" name="message" placeholder="Message" required></textarea>
-        <input type="submit" class="submit" value="Send Message"></input>
+        <button type="submit" class="submit">Send Message</button>
       </form>
     </div>
   </section>
 
 </main>
 
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="./assets/js/script.js"></script>
 <!-- <script src="./assets/js/scroll.js"></script> -->
-<!-- <script src="./assets/js/script.js"></script> -->
 
 </body>
 </html>
