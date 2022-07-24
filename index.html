@@ -108,29 +108,21 @@
   
   <section class="contact" id="contact">
     <div class="container">
-      <form class="form contact-form" action="contact.php">
-        <h3>Get In Touch</h3>
+      <h3>Get In Touch</h3>
+      <form class="form contact-form" action="contact.php" method="POST">
         <input type="text" id="name" name="name" placeholder="Name" required>
         <input type="email" id="email" name="email" placeholder="Email" required>
         <input type="text" id="phone" name="phone"  placeholder="Phone Number" required>
         <textarea id="message" rows="4" name="message" placeholder="Message" required></textarea>
-        <button type="submit" class="submit">Send Message</button>
+        <input type="submit" class="submit" value="Send Message"></input>
       </form>
     </div>
   </section>
 
 </main>
 
-<script src="./assets/php/contact.php"></script>
-
 <!-- <script src="./assets/js/scroll.js"></script> -->
 <!-- <script src="./assets/js/script.js"></script> -->
-<!-- <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script> -->
-<!-- <script type="text/javascript">
-  (function() {
-    emailjs.init('zCBLLBK3jR377RoRm');
-  })();
-</script>   -->
 
 </body>
 </html>
