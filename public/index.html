@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/52a67c9491.js" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script> 
+  <link rel="icon" type="image/png" href="../assets/images/finn-96x96.png">
   <link rel="stylesheet" href="./css/style.css">
   <title>Chris Condreay</title>
 </head>
@@ -17,14 +18,12 @@
   </div>
   <nav class="nav-links fixed-nav">
     <ul>
-      <li>
-        <li><a href="#" data-page="about">About</a></li>
-        <li><a href="#" data-page="experience">Experience</a></li>
-        <li><a href="#" data-page="education">Education</a></li>
-        <li><a href="#" data-page="skills">Skills</a></li>
-        <li><a href="#" data-page="projects">Projects</a></li>
-        <li><a href="#" data-page="contact">Contact</a></li>
-      </li>
+      <li><a href="#" data-page="about">About</a></li>
+      <li><a href="#" data-page="experience">Experience</a></li>
+      <li><a href="#" data-page="education">Education</a></li>
+      <li><a href="#" data-page="skills">Skills</a></li>
+      <li><a href="#" data-page="projects">Projects</a></li>
+      <li><a href="#" data-page="contact">Contact</a></li>
     </ul>
   </nav>
 </header>
@@ -60,12 +59,12 @@
     </div>
     <div class="container">
       <div class="experience-layout layout">
-        <div class="content">
+        <div class="experience">
           <h2>Certificate of Completion</h2>
           <p>Graduated and Earned a certificate from UCI Continuing Education Program learning Full Stack Web Development.</p>
           <p class="date">December 2021</p>
         </div>
-        <div class="content">
+        <div class="experience">
           <h2>Moorpark College</h2>
           <p>Earned Associates Degree from community college majoring in Computer Science and minoring in Business</p>
           <p class="date">2017-2020</p>
@@ -83,17 +82,25 @@
   </section>
 
   <section id="contact">
-    <div class="container">
-      <h3>Get In Touch</h3>
-      <form class="form contact-form" method="POST">
-        <input type="text" id="name" name="name" placeholder="Name" required>
-        <input type="email" id="email" name="email" placeholder="Email" required>
-        <input type="phone" id="phone" name="phone"  placeholder="Phone Number" required>
-        <textarea id="message" rows="4" name="message" placeholder="Message" required></textarea>
-        <button type="submit" class="submit">Send Message</button>
-      </form>
+    <div class="container card">
+      <div class="content">
+        <div class="card-content">
+          <form class="form contact-form" method="POST">
+            <h3>Get In Touch</h3>
+            <input type="text" id="name" name="name" placeholder="Name" required>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            <input type="phone" id="phone" name="phone"  placeholder="Phone Number" required>
+            <textarea id="message" rows="4" name="message" placeholder="Message" required></textarea>
+            <input type="submit" class="submit" value="Send Message"></input>
+          </form>
+        </div>
+      </div>
     </div>
   </section>
+
+  <footer>
+    <p>Footer</p>
+  </footer>
 
 </main>
 

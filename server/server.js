@@ -1,5 +1,6 @@
 const express = require( 'express');
 const app = express();
+const fs = require('fs')
 const nodemailer = require('nodemailer')
 
 const PORT = process.env.PORT || 3000;
@@ -7,9 +8,10 @@ const PORT = process.env.PORT || 3000;
 // Middleware 
 app.use(express.static('public'))
 app.use(express.json())
+// app.use('../assets/images', express.static('images'));
 
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/public/index.html')
+  res.sendFile(__dirname + './public/index.html')
 });
 
 app.post('/', (req, res) => {
@@ -44,6 +46,14 @@ app.post('/', (req, res) => {
     }
   })
 })
+
+// function getImages(req,res){
+//   fs.readFile('image.jpg', function(err, data) {
+//     if (err) throw err; // Fail if the file can't be read.
+//       res.writeHead(200, {'Content-Type': 'image/jpeg'});
+//       res.end(data); // Send the file data to the browser.
+//   });
+// };
 
 app.listen(PORT, () => {
   console.log(`Server is running on PORT: ${PORT}`);

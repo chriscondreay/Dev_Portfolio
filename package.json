@@ -2,9 +2,9 @@
   "name": "Dev_Portfolio",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./server/server.js",
   "scripts": {
-    "test": "nodemon ./server/servers.js",
+    "dev": "nodemon ./server/servers.js",
     "start": "node ./server/server.js"
   },
   "repository": {
