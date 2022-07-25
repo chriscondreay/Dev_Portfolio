@@ -27,6 +27,7 @@ app.post('/', (req, res) => {
     from: req.body.email,
     to: 'condreaychris@gmail.com',
     subject: `Message from ${req.body.email}`,
+    text: req.body.phone,
     text: req.body.message
   }
 
