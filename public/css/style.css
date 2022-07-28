@@ -296,14 +296,24 @@ textarea {
   border-radius: 1.5rem;
 }
 
-@media (min-width: 768px) {
-  .menu-btn {
-    display: flex;
-    color: #fff;
+@media (max-width: 768px) {
+  header {
+    justify-content: space-between;
+    padding: 0 15px;
+  }
+
+  .about {
+    padding-top: 50px;
+    margin-top: 80px;
   }
 
   .nav-links ul {
     display: none;
+  }
+
+  .menu-btn {
+    display: flex;
+    color: #fff;
   }
 }
 
