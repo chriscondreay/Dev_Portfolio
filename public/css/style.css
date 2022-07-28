@@ -44,6 +44,13 @@ li:last-child {
   padding-right: 0;
 }
 
+.menu-btn {
+  font-size: 30px;
+  font-weight: bolder;
+  cursor: pointer;
+  display: none;
+}
+
 /* About Section */
 /* 
 #about {
@@ -194,10 +201,6 @@ textarea {
   background: #5d5d5d;
 } */
 
-.section-header {
-  position: relative;
-}
-
 .about {
   display: grid;
   place-items: center;
@@ -236,9 +239,8 @@ textarea {
   display: block;
   height: 1px;
   width: 2em;
-  background: #5bcbf0;
+  background: #5bcbf059;
   margin: 0.7em auto 0.5em;
-  opacity: 0.35;
 }
 
 .profile-pos {
@@ -252,7 +254,6 @@ textarea {
 
 .profile-text {
   font-weight: 300;
-  opacity: 0.9;
   margin-bottom: 1.875em;
 }
 
@@ -276,8 +277,7 @@ textarea {
 }
 
 .social-link {
-  color: #eee;
-  opacity: 0.5;
+  color: #ededed80;
   font-size: 1.5rem;
 }
 
@@ -294,6 +294,17 @@ textarea {
   padding: 0.5em;
   border: 5px solid #fff;
   border-radius: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .menu-btn {
+    display: flex;
+    color: #fff;
+  }
+
+  .nav-links ul {
+    display: none;
+  }
 }
 
 @media (min-width: 600px) {
