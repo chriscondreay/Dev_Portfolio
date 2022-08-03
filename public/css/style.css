@@ -252,7 +252,7 @@ li:last-child {
 
 .card-flex {
   display: flex;
-  width: 90%;
+  width: 100%;
   justify-content: space-around;
 }
 
