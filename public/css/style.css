@@ -12,15 +12,20 @@ body {
 }
 
 .wrapper {
-  padding: 250px 0 0;
+  padding: 100px 0 30px;
   margin: 20px;
+}
+
+.wrapper .title {
+  font-size: 3rem;
+  padding-left: 3.5rem;
 }
 
 /* Navbar and Header */
 
 header {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   background-color: #03045E;
   z-index: 1;
@@ -349,7 +354,7 @@ form {
   text-align: center;
 }
 
-/* .card {
+.card-content {
   padding: 25px 0;
   margin: 10px 55px;
   background: #ffffff;
@@ -358,14 +363,14 @@ form {
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
-} */
+}
 
-/* h3 {
+h3 {
   font-size: 35px;
   padding-bottom: 15px;
-} */
+}
 
-/* input,
+input,
 textarea {
   background: #e5e5e5;
   width: 25rem;
@@ -394,5 +399,5 @@ textarea {
 
 .submit:hover {
   background: #5d5d5d;
-} */
+}
 
