@@ -55,11 +55,66 @@ li:last-child {
   padding-right: 0;
 }
 
-.menu-btn {
-  font-size: 30px;
-  font-weight: bolder;
-  cursor: pointer;
+.burger {
   display: none;
+}
+
+.burger div {
+  background: #fff;
+  width: 25px;
+  height: 3px;
+  margin: 3px;
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 0 15px;
+  }
+  
+  .nav-links {
+    margin: 0;
+    position: absolute;
+    right: 0;
+    top: 8vh;
+    background: #03045E;
+    height: 92vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    gap: 50px;
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    transition: .5s ease-in;
+    -webkit-transition: .5s ease-in;
+    -moz-transition: .5s ease-in;
+    -ms-transition: .5s ease-in;
+    -o-transition: .5s ease-in;
+}
+  
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+.nav-active {
+  transform: translateX(0%);
+  -webkit-transform: translateX(0%);
+  -moz-transform: translateX(0%);
+  -ms-transform: translateX(0%);
+  -o-transform: translateX(0%);
+}
+
+.nav-toggle {
+  transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -o-transform: translateX(100%);
 }
 
 /* About Section */
@@ -160,22 +215,8 @@ li:last-child {
 }
 
 @media (max-width: 768px) {
-  header {
-    justify-content: space-between;
-    padding: 0 15px;
-  }
-
   .about {
     margin-top: 70px;
-  }
-
-  .nav-links ul {
-    display: none;
-  }
-
-  .menu-btn {
-    display: flex;
-    color: #fff;
   }
 }
 

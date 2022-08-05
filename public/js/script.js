@@ -48,3 +48,26 @@ window.onscroll = function() {
   }
   prevScrollpos = currentScrollPos;
 }
+
+// Responsive hamburger
+const navSlide = () => {
+  const burger = document.querySelector('.burger');
+  const nav = document.querySelector('.nav-links');
+
+  burger.addEventListener('click', () => {
+    nav.classList.toggle('nav-active');
+  })
+}
+
+const navSlidBack = () => {
+  const a = document.querySelector('a');
+  const nav = document.querySelector('.nav-links');
+  
+  a.addEventListener('click', () => {
+    
+      nav.classList.toggle('nav-toggle');
+  })
+}
+
+navSlidBack()
+navSlide();
