@@ -431,8 +431,9 @@ li:last-child {
 /* Contact form */
 
 form {
-  display: grid;
-  justify-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #contact {
@@ -443,7 +444,7 @@ form {
 
 .card-content {
   padding: 25px 0;
-  margin: 10px 55px;
+  margin: 10px 20px;
   background: #ffffff;
   border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -460,7 +461,7 @@ h3 {
 input,
 textarea {
   background: #e5e5e5;
-  width: 25rem;
+  width: 15rem;
   margin: 8px 0;
   padding: 10px;
   border: none;
