@@ -38,16 +38,16 @@ contactForm.addEventListener('submit', (e) => {
 
 // Navbar hide and reveal
 
-let prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-  let currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.querySelector(".navbar").style.top = "0";
-  } else {
-    document.querySelector(".navbar").style.top = "-150px";
-  }
-  prevScrollpos = currentScrollPos;
-}
+// let prevScrollpos = window.pageYOffset;
+// window.onscroll = function() {
+//   let currentScrollPos = window.pageYOffset;
+//   if (prevScrollpos > currentScrollPos) {
+//     document.querySelector(".navbar").style.top = "0";
+//   } else {
+//     document.querySelector(".navbar").style.top = "-150px";
+//   }
+//   prevScrollpos = currentScrollPos;
+// }
 
 // Responsive hamburger
 const navSlide = () => {
