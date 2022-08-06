@@ -53,21 +53,37 @@ contactForm.addEventListener('submit', (e) => {
 const navSlide = () => {
   const burger = document.querySelector('.burger');
   const nav = document.querySelector('.nav-links');
+  const navLinks = document.querySelectorAll('.nav-links li')
 
   burger.addEventListener('click', () => {
+    // Toggle the nav
     nav.classList.toggle('nav-active');
-  })
-}
 
-const navSlidBack = () => {
-  const a = document.querySelector('a');
-  const nav = document.querySelector('.nav-links');
-  
-  a.addEventListener('click', () => {
+    // Aninating links
+    navLinks.forEach((link, index) => {
+      if (link.style.animation) {
+        link.style.animation = ''
+      } else {
+        link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + .4}s`
+      }
+    });
     
-      nav.classList.toggle('nav-toggle');
-  })
+    // Animate Burger button
+    burger.classList.toggle('toggle')
+  });
+
+  
 }
 
-navSlidBack()
+// const navSlidBack = () => {
+//   const a = document.querySelector('a');
+//   const nav = document.querySelector('.nav-links');
+  
+//   a.addEventListener('click', () => {
+    
+//       nav.classList.toggle('nav-toggle');
+//   })
+// }
+
+// navSlidBack()
 navSlide();
