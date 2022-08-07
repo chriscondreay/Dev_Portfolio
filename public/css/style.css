@@ -27,7 +27,7 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #03045E;
+  background-color: #48cae4;
   z-index: 1;
   padding: 10px 0;
   position: fixed;
@@ -53,6 +53,10 @@ li {
 
 li:last-child {
   padding-right: 0;
+}
+
+.nav-links li a:hover {
+  color: #ffe254;
 }
 
 .burger {
@@ -82,7 +86,7 @@ li:last-child {
     position: absolute;
     right: 0;
     top: 8vh;
-    background: #03045E;
+    background: #48cae4;
     height: 92vh;
     display: flex;
     flex-direction: column;
@@ -180,7 +184,7 @@ li:last-child {
   max-width: 850px;
   display: flex;
   flex-direction: column;
-  background: #005e9b;
+  background: #03045e;
   color: #fff;
   text-align: center;
   padding: 2em;
@@ -222,6 +226,8 @@ li:last-child {
 }
 
 .profile-img {
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -437,7 +443,7 @@ form {
 }
 
 #contact {
-  background: #353535;
+  background: #caf0f8;
   padding: 10px;
   text-align: center;
 }
@@ -454,6 +460,7 @@ form {
 }
 
 h3 {
+  color: #03045e;
   font-size: 35px;
   padding-bottom: 15px;
 }
@@ -474,8 +481,8 @@ textarea {
 }
 
 .submit {
-  background: #3e3e3e;
-  color: #fff;
+  background: #ade8f4;
+  color: #000;
   border: none;
   border-radius: 20px;
   -webkit-border-radius: 20px;
@@ -486,6 +493,22 @@ textarea {
 }
 
 .submit:hover {
-  background: #5d5d5d;
+  background: #03045e;
+  color: #fff;
+}
+
+/* Footer */
+footer {
+  background: rgb(67, 67, 67);
+}
+
+.footer {
+  color: #e5e5e5;
+  text-align: center;
+}
+
+p.footer-text {
+  padding: 20px 0;
+  margin: 0;
 }
 
