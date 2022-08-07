@@ -59,7 +59,7 @@ const navSlide = () => {
     // Toggle the nav
     nav.classList.toggle('nav-active');
 
-    // Aninating links
+    // Animating links
     navLinks.forEach((link, index) => {
       if (link.style.animation) {
         link.style.animation = ''
@@ -71,8 +71,15 @@ const navSlide = () => {
     // Animate Burger button
     burger.classList.toggle('toggle')
   });
+}
 
-  
+const getDate = () => {
+  let date = new Date().getFullYear();
+  let spanEl = document.querySelector('span');
+  let footerText = document.querySelector('.footer-text');
+
+  spanEl.textContent = `${date} Chris Condreay.`;
+  footerText.append(spanEl);
 }
 
 // const navSlidBack = () => {
@@ -86,4 +93,6 @@ const navSlide = () => {
 // }
 
 // navSlidBack()
+
+getDate();
 navSlide();
