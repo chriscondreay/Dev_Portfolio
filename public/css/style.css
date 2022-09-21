@@ -351,11 +351,7 @@ li:last-child {
 /* Projects */
 
 .card-flex {
-  /* display: flex;
-  width: 100%;
-  justify-content: space-around;
-  flex-wrap: wrap; */
-  columns: 3 310px;
+  columns: 2 310px;
   margin: 0 auto 20px ;
 }
 
