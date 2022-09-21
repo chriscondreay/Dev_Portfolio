@@ -278,23 +278,24 @@ li:last-child {
     flex-direction: row;
   }
 
-  .profile-name {
-    font-size: 3rem;
-  }
-
+  
   .profile-pos {
     font-size: 1rem;
   }
-
+  
   .profile-text {
     font-size: 1.2rem;
   }
-
+  
   .profile-main {
     text-align: left;
     margin-left: 2em;
   }
-
+  
+  .profile-name {
+    font-size: 3rem;
+  }
+  
   .profile-name::after {
     margin-left: 0;
     width: 5em;
