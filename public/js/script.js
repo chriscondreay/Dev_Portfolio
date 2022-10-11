@@ -1,5 +1,5 @@
 const contactForm = document.querySelector('.contact-form')
-let name = document.querySelector('#name');
+let contactName = document.querySelector('#name');
 let email = document.querySelector('#email');
 let phone = document.querySelector('#phone');
 let message = document.querySelector('#message');
@@ -10,7 +10,7 @@ contactForm.addEventListener('submit', (e) => {
   e.preventDefault();
 
   let formData = {
-    name: name.value,
+    name: contactName.value,
     email: email.value,
     phone: phone.value,
     message: message.value,
