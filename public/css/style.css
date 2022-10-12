@@ -618,7 +618,7 @@ textarea:focus {
   border-color: #ffaa2c;
 }
 
-@media (min-width: 540px) {
+@media (min-width: 700px) {
   .center {
     /* max-width: 1020px; */
     max-width: 100%;
@@ -662,7 +662,7 @@ textarea:focus {
     border: 1px solid #ccc;
     padding-left: 15px;
     font-size: 16px;
-    border-bottom-width: 3px;
+    border-bottom-width: 2px;
   }
 
   .user-details .input input:focus,
@@ -679,7 +679,7 @@ textarea:focus {
     padding-top: 13px;
     padding-left: 15px;
     font-size: 16px;
-    border-bottom-width: 1px;
+    border-bottom-width: 2px;
     transition: all 0.2s ease;
     -webkit-transition: all 0.2s ease;
     -moz-transition: all 0.2s ease;
@@ -688,7 +688,7 @@ textarea:focus {
   }
 }
 
-@media (min-width: 760px) {
+@media (min-width: 920px) {
   .center {
     max-width: 1020px;
   }
@@ -699,14 +699,8 @@ textarea:focus {
   }
 
   form .user-details .input {
-    margin: 20px 0 12px 0;
-    width: calc(100% / 2 - 20px);
-  }
-
-  form .user-details .input:nth-child(3),
-  form .user-details .input:nth-child(4) {
-    display: block;
-    width: calc(100% / 2 - 20px);
+    margin: 5px 0 5px 0;
+    width: 100%;
   }
 }
 
