@@ -635,6 +635,7 @@ textarea:focus {
 
   .contact-info {
     width: 45%;
+    font-size: 18px;
   }
 
   .container {
@@ -643,8 +644,6 @@ textarea:focus {
   }
 
   .container form .user-details {
-    /* display: flex;
-    flex-wrap: wrap; */
     margin: 20px 10px 12px 0;
   }
   
@@ -655,15 +654,19 @@ textarea:focus {
   }
 
   .user-details .input input {
-    height: 45px;
+    height: 65px;
     width: 100%;
     outline: none;
-    border-radius: 20px;
+    border-radius: 50px;
     border: 1px solid #ccc;
     padding-left: 15px;
-    font-size: 16px;
+    font-size: 18px;
     border-bottom-width: 2px;
-  }
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
 
   .user-details .input input:focus,
   .user-details .input input:valid {
@@ -671,14 +674,14 @@ textarea:focus {
   }
 
   textarea {
-    height: 45px;
+    height: 70px;
     width: 100%;
     outline: none;
     border-radius: 20px;
     border: 1px solid #ccc;
     padding-top: 13px;
     padding-left: 15px;
-    font-size: 16px;
+    font-size: 18px;
     border-bottom-width: 2px;
     transition: all 0.2s ease;
     -webkit-transition: all 0.2s ease;
@@ -689,6 +692,19 @@ textarea:focus {
 }
 
 @media (min-width: 920px) {
+  #contact {
+    position: relative;
+  }
+
+  .girl-png {
+    position: absolute;
+    bottom: 3rem;
+    left: 25rem;
+    width: 12%;
+    z-index: -1;
+    opacity: 0.75;
+  }
+
   .center {
     max-width: 1020px;
   }
